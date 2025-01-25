@@ -12,7 +12,7 @@ const useFetch = (url: string) => {
             try {
                 const response: Response = await fetch(url, {signal: abortCtrl.signal})
                 if (!response.ok) {
-                    throw new Error("Failed to fect data!")
+                    throw new Error("Failed to fetch data!")
                 }
                 const data: unknown = await response.json()
 
